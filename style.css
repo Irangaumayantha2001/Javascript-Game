@@ -1,0 +1,105 @@
+body {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+section{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.btnNeon {
+    position: absolute;
+    right: 50%;
+    margin: auto;
+    bottom: 20px;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #2196f3;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 12px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.btnNeon:hover {
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2198f3, 0 0 80px #2196f3;
+    transition-delay: 1s;
+}
+
+.btnNeon span {
+    position: absolute;
+    display: block;
+}
+
+.btnNeon .sp1 {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #2196f3);
+}
+
+.btnNeon:hover .sp1 {
+    left: 100%;
+    transition: 1s
+}
+
+
+.btnNeon .sp3 {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #2196f3);
+}
+
+.btnNeon:hover .sp3 {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+.btnNeon .sp2 {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #2196f3);
+}
+
+.btnNeon:hover .sp2 {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.btnNeon .sp4 {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #2196f3);
+}
+
+.btnNeon:hover .sp4 {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
